@@ -29,19 +29,19 @@
             let c = co2UdledtIKg(timer,co2);
 
             let resultat;
-            if (isNaN(co2UdledtIKg)) {
+            if (isNaN(c)) {
                 resultat = "Det er ikke et tal, prøv igen!";
 
-            } else if (co2UdledtIKg <= 0) {
+            } else if (c <= 0) {
                 resultat = "Timerne er mindre end nul, prøv igen!";
 
-            } else if (co2UdledtIKg < 100) {
+            } else if (c < 100) {
                 resultat = "Tæt på Thunberg";
 
-            } else if (co2UdledtIKg < 200) {
+            } else if (c < 200) {
 
                 resultat = "Ja ja, du behøver ikke at melde dig ud af Å!";
-            } else if (co2UdledtIKg < 600) {
+            } else if (c < 600) {
 
                 resultat = "Det er godt for turismin i nordeuropa.";
             } else {
