@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="">
 
     <style>
-
         img {
             width: 100%;
 
         }
 
         body {
-            margin-right: 20px;
+            /*margin-right: 20px;
+            margin-left: 20px;*/
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+             margin-right: 20px;
             margin-left: 20px;
         }
 
-        footer{
+        footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
 
@@ -30,17 +36,30 @@
 
         }
 
-        article, p, h2, h3 {
+        article,
+        p,
+        h2,
+        h3 {
             margin: 0;
             padding: 0;
         }
 
-        h1 {
+        header {
             text-align: center;
         }
 
         article {
             margin-top: 20px;
+        }
+
+        header,
+        footer {
+            padding 10px 0;
+            border: 1px solid #888;
+        }
+
+        article {
+            border: 1px solid #333;
         }
 
         @media (min-width:500px) {
@@ -52,9 +71,6 @@
                 max-width: initial;
             }
         }
-
-
-
 
     </style>
 
@@ -86,12 +102,13 @@
 
         </section>
 
-        <footer>
-            <p>This is the footer</p>
-        </footer>
-    </main>
 
-    <script src=""></script>
+    </main>
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+
+    <script></script>
 
 
 </body>
