@@ -108,34 +108,41 @@
         <p id="foder">This is the footer</p>
     </footer>
 
+
+    <!--text content er uformateret. innerHTML er formateret (stylet med css)-->
+
     <script>
-        document.querySelector("#title")
-        console.log("title")
+        const titel = document.querySelector("header")
+        console.log("titel");
+        titel.innerHTML = "<h1>Billedgalleri<h1/>";
 
         document.querySelector("#undertitle")
-        console.log("undertitle")
+        console.log("undertitle");
 
         document.querySelector(".billed1")
-       console.log("billed1")
+        console.log("billed1");
 
-        document.querySelector(".artikel1")
-        console.log("artikel1")
+        const artikelOverskrift = document.querySelector(".artikel1")
+        console.log("artikel1");
+        artikelOverskrift.innerHTML = "<h3>Nye artikel<h3/>";
 
-        document.querySelector(".tekst1")
-        console.log("tekst1")
+        const foersteTekst = document.querySelector(".tekst1")
+        console.log("tekst1");
+        foersteTekst.innerHTML = "<p>ny tekst hohooooo<p/>";
 
         document.querySelector(".billed2")
-        console.log("billed2")
+        console.log("billed2");
 
-        document.querySelector(".artikel2")
-        console.log("artikel2")
+        const andenArtikelOverskrift = document.querySelector(".artikel2")
+        console.log("artikel2");
+        andenArtikelOverskrift.textContent = "Ny artikel 2";
 
-        document.querySelector(".tekst2")
-        console.log("tekst2")
+        const andenTekst = document.querySelector(".tekst2")
+        console.log("tekst2");
+        andenTekst.textContent = "ny tekst 2 hohohohohoho"
 
         document.querySelector("#foder")
-        console.log("foder")
-
+        console.log("foder");
 
     </script>
 
