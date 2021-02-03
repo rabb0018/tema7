@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        img {
+            width: 100%;
+
+        }
+
+        body {
+            /*margin-right: 20px;
+            margin-left: 20px;*/
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        section {
+            max-width: 500px;
+
+        }
+
+        article,
+        p,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        article {
+            margin-top: 20px;
+        }
+
+        header,
+        footer {
+            padding 10px 0;
+            border: 1px solid #888;
+        }
+
+        article {
+            border: 1px solid #333;
+        }
+
+        @media (min-width:500px) {
+
+            section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                max-width: initial;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id="title">Titel</h1>
+    </header>
+
+    <main>
+
+        <h2 id="undertitle">Undertitel</h2>
+        <section>
+
+            <article>
+                <img class="billed1" src="https://placeimg.com/640/480/nature" alt="træ">
+                <h3 class="artikel1">Article 1</h3>
+                <p class="tekst1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eveniet nostrum quos similique numquam quo architecto molestiae odit in, id veritatis ad totam, officia dolore quasi possimus explicabo aliquid officiis mollitia natus, deserunt quam ex, enim sequi. Cupiditate expedita quod blanditiis deserunt nostrum. Quidem consectetur, culpa expedita commodi neque quasi.</p>
+            </article>
+            <article>
+                <img class="billed2" src="https://placeimg.com/640/470/nature" alt="">
+                <h3 class="artikel2">Article 2</h3>
+                <p class="tekst2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem at, voluptas quis dolor, reiciendis perspiciatis quas quae, minus sed exercitationem voluptatibus repellendus officiis veritatis iusto? Ducimus qui doloribus excepturi unde maxime optio dolor velit voluptate, consequuntur sint ratione. Dolor blanditiis, accusamus tempore. Aspernatur aliquam nam unde mollitia odit, cupiditate fugit.</p>
+            </article>
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p id="foder">This is the footer</p>
+    </footer>
+
+    <script>
+        document.querySelector("#title")
+        console.log("title")
+
+        document.querySelector("#undertitle")
+        console.log("undertitle")
+
+        document.querySelector(".billed1")
+       console.log("billed1")
+
+        document.querySelector(".artikel1")
+        console.log("artikel1")
+
+        document.querySelector(".tekst1")
+        console.log("tekst1")
+
+        document.querySelector(".billed2")
+        console.log("billed2")
+
+        document.querySelector(".artikel2")
+        console.log("artikel2")
+
+        document.querySelector(".tekst2")
+        console.log("tekst2")
+
+        document.querySelector("#foder")
+        console.log("foder")
+
+
+    </script>
+
+
+</body>
+
+</html>
