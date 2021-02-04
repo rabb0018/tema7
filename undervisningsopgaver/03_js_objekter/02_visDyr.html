@@ -10,17 +10,20 @@
 
 <body>
     <article id="dyr">
-        <h3></h3>
-        <img src="" alt="">
-        <p>Type: </p>
-        <p>Levested: </p>
 
+
+        <p> </p>
+        <img src="" alt="">
 
     </article>
 
 
 
     <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+        });
+
         let person = {
             "navn": "gris",
             "type": "pattedyr",
@@ -32,12 +35,13 @@
 
         const destination = document.querySelector("#dyr");
 
-        var paragraph = document.getElementById("p");
 
-        destination.querySelector("h3").textContent = person.navn;
+
+
+
+        destination.querySelector("p").textContent = `navn: ${person.navn}, dyr: ${person.type}, levested: ${person.levested}`;
+
         destination.querySelector("img").src = person.billede;
-        destination.querySelector("p").textContent += person.type;
-        destination.querySelector("p").textContent += person.levested;
 
 
 
