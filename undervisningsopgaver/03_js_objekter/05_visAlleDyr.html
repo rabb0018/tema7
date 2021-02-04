@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <section id="liste"></section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        let dyre = [{
+                "navn": "gris",
+                "type": "pattedyr",
+                "levested": "svinefarm",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+            },
+            {
+                "navn": "frø",
+                "type": "kolddyr?",
+                "levested": "åer og søer",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png"
+            },
+            {
+                "navn": "ræv",
+                "type": "rovdyr",
+                "levested": "skove og byer",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png"
+            },
+            {
+                "navn": "sild",
+                "type": "fisk",
+                "levested": "the big oceaan",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg"
+            },
+            {
+                "navn": "krokodille",
+                "type": "reptil",
+                "levested": "Golfbaner og Florida",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg"
+            },
+        ];
+
+        function start() {
+            const listevisning = document.querySelector("#liste");
+            dyre.forEach(dyr =>  {
+                listevisning.innerHTML += `<p>${dyr.navn} ${dyr.type} ${dyr.levested}<p/>`
+            })
+        }
+
+
+        console.log(dyre[0].navn);
+        console.log(dyre[0].type);
+        console.log(dyre[0].levested);
+        console.log(dyre[0].billede);
+
+        console.log(dyre[1].navn);
+        console.log(dyre[1].type);
+        console.log(dyre[1].levested);
+        console.log(dyre[1].billede);
+
+
+        console.log(dyre[2].navn);
+        console.log(dyre[2].type);
+        console.log(dyre[2].levested);
+        console.log(dyre[2].billede);
+
+        console.log(dyre[3].navn);
+        console.log(dyre[3].type);
+        console.log(dyre[3].levested);
+        console.log(dyre[3].billede);
+
+        console.log(dyre[4].navn);
+        console.log(dyre[4].type);
+        console.log(dyre[4].levested);
+        console.log(dyre[4].billede);
+
+    </script>
+</body>
+
+</html>
