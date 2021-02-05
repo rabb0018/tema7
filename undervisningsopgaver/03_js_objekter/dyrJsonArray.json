@@ -1,0 +1,30 @@
+[
+            {"navn": "gris",
+                "type": "pattedyr",
+                "levested": "svinefarm",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+            },
+            {
+                "navn": "frø",
+                "type": "kolddyr?",
+                "levested": "åer og søer",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png"
+            },
+            {
+                "navn": "ræv",
+                "type": "rovdyr",
+                "levested": "skove og byer",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png"
+            },
+            {
+                "navn": "sild",
+                "type": "fisk",
+                "levested": "the big oceaan",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg"
+            },
+            {
+                "navn": "krokodille",
+                "type": "reptil",
+                "levested": "Golfbaner og Florida",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg"
+            }]
