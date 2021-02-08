@@ -26,12 +26,17 @@
             border: 1px solid;
             border-radius: 1em;
         }
+
+
+
+
     </style>
 
 </head>
 
 <body>
     <header>
+       <h1>Alle</h1>
         <nav>
             <button data-troende="alle" class="valgt">Alle</button>
             <button data-troende="ja" class="valgt">Troende</button>
@@ -78,6 +83,7 @@
             filter = this.dataset.troende;
 
             visPersoner();
+            header.textContent = this.textContent;
         }
 
 
