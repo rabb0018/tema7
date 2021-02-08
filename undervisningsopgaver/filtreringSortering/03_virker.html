@@ -67,7 +67,7 @@
         // første funktion der kaldes efter DOM er loaded
         function start() {
 
-            const filterKnapper = document.querySelector("nav button");
+            const filterKnapper = document.querySelectorAll("nav button");
             filterKnapper.forEach(knap => knap.addEventListener("click", filtrerPersoner));
 
             loadJSON();
