@@ -8,17 +8,26 @@
     <style>
         body {
             font-family: sans-serif;
+             background-color: #2f2f2f;
+
         }
 
         img {
             width: 100%;
         }
 
+        header {
+            margin: auto;
+
+        }
+
         #liste {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 1em;
-            margin: 2em;
+            max-width: 1000px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1.5em;
+            margin: auto;
         }
 
         .person {
@@ -29,15 +38,47 @@
 
         nav {
             text-align: center;
+            margin-bottom: 30px;
+
         }
 
         .valgt {
             background-color: red;
         }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #eaeaea;
+        }
+
+        h2 {
+            margin: auto;
+            width: 1000px;
+            margin-bottom: 30px;
+            color: #eaeaea;
+        }
+
+        h3 {
+
+            color: #ffff89;
+        }
+
+        .dishes {
+            background-color: rgba(255, 255, 255, 0.17);
+            padding: 20px;
+            color: #eaeaea;
+            text-align: center;
+            border-radius: 5px 23px 70px 23px;
+
+        }
     </style>
 </head>
 
 <body>
+
+
+
 
     <header>
         <h1>Babushka</h1>
@@ -49,15 +90,17 @@
             <button data-kategori="drikkevarer">Drikkevarer</button>
             <button data-kategori="sideorders">Sideorders</button>
         </nav>
-    </header>
 
+
+    </header>
+    <h2>Alle</h2>
 
     <section id="liste"></section>
 
     <template>
         <article class="dishes">
             <img src="" alt="" class="billede">
-            <h2 class="navn"></h2>
+            <h3 class="navn"></h3>
             <p class="oprindelsesregion"></p>
             <p class="kortbeskrivelse"></p>
             <p class="pris"></p>
@@ -66,7 +109,7 @@
     </template>
 
     <script>
-        const header = document.querySelector("header h1");
+        const header = document.querySelector("header h2");
         const medieurl = "https://babushka-dd8a.restdb.io/media/";
         const myHeaders = {
 
@@ -143,5 +186,8 @@
 
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
