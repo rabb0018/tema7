@@ -42,12 +42,12 @@
     <header>
         <h1>Babushka</h1>
         <nav>
-            <button data-food="alle" class="valgt">Alle</button>
-            <button data-food="forretter">Forretter</button>
-            <button data-food="hovedretter">Hovedretter</button>
-            <button data-food="desserter">Desserter</button>
-            <button data-food="drikkevarer">Drikkevarer</button>
-            <button data-food="sideorders">Sideorders</button>
+            <button data-kategori="alle" class="valgt">Alle</button>
+            <button data-kategori="forretter">Forretter</button>
+            <button data-kategori="hovedretter">Hovedretter</button>
+            <button data-kategori="desserter">Desserter</button>
+            <button data-kategori="drikkevarer">Drikkevarer</button>
+            <button data-kategori="sideorders">Sideorders</button>
         </nav>
     </header>
 
@@ -92,7 +92,7 @@
         function filtrerRetter() {
             console.log(filtrerRetter);
 
-            filter = this.dataset.food;
+            filter = this.dataset.kategori;
 
             document.querySelector(".valgt").classList.remove("valgt");
 
@@ -123,7 +123,7 @@
             dest.textContent = "";
             retter.forEach(ret => {
 
-                if (filter == ret.food || filter == "alle") {
+                if (filter == ret.kategori || filter == "alle") {
                     const klon = skabelon.cloneNode(true);
                     klon.querySelector(".billede").src = medieurl + ret.billede;
                     klon.querySelector(".navn").textContent = ret.navn;
