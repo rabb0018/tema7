@@ -131,11 +131,15 @@
                     klon.querySelector(".kortbeskrivelse").textContent = ret.kortbeskrivelse;
                     klon.querySelector(".pris").textContent = ret.pris;
 
-
+                    klon.querySelector(".dishes").addEventListener("click", () => visDetaljer(ret));
                     dest.appendChild(klon);
                 }
             })
 
+            function visDetaljer(hvilken) {
+                location.href = `02_detaljeRetter.html?=id${hvilken._id}`;
+
+            }
 
 
         }
