@@ -155,6 +155,9 @@
 
         function visRet() {
             document.querySelector(".billede").src = medieurl + ret.billede;
+
+            document.querySelector(".billede").alt = ret.billede;
+
             document.querySelector(".navn").textContent = ret.navn;
             document.querySelector(".oprindelsesregion").textContent = "Fra:" + " " + ret.oprindelsesregion;
             document.querySelector(".langbeskrivelse").textContent = ret.langbeskrivelse;
