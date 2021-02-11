@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Babushka</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: sans-serif;
-             background-color: #2f2f2f;
-
+            background-color: #2f2f2f;
         }
 
         img {
@@ -20,14 +23,13 @@
             margin: auto;
         }
 
-        #liste {
+        /*#liste {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            max-width: 1000px;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             grid-gap: 1.5em;
             margin: auto;
-        }
+        }*/
 
         .person {
             padding: 1em;
@@ -49,19 +51,22 @@
 
         h2 {
             margin: auto;
-            width: 1000px;
-
+            width: auto;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 2rem;
 
 
         }
 
         h3 {
             color: #ffff89;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1.35rem;
         }
 
 
         .dishes {
-            width: 600px;
+            max-width: 600px;
             margin: auto;
             margin-top: 60px;
             background-color: rgba(255, 255, 255, 0.17);
@@ -73,13 +78,31 @@
 
         }
 
+        button {
+            background-color: rgba(255, 255, 255, 0.17);
+            /* Green */
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        p {
+            font-family: 'PT Sans', sans-serif;
+        }
     </style>
 </head>
 
 <body>
 
 
-    <button>Tilbage knap</button>
+    <button>Tilbage til forside</button>
 
 
     <article class="dishes">
@@ -130,8 +153,5 @@
         function tilbageTilRetter() {
             history.back();
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
