@@ -216,6 +216,9 @@
                 if (filter == ret.kategori || filter == "alle") {
                     const klon = skabelon.cloneNode(true);
                     klon.querySelector(".billede").src = medieurl + ret.billede;
+
+                    klon.querySelector(".billede").alt = ret.billede;
+
                     klon.querySelector(".navn").textContent = ret.navn;
                     klon.querySelector(".oprindelsesregion").textContent = "Fra:" + " " + ret.oprindelsesregion;
                     klon.querySelector(".kortbeskrivelse").textContent = ret.kortbeskrivelse;
