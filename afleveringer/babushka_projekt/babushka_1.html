@@ -103,6 +103,16 @@
         }
 
 
+        .oprindelsesregion {
+            font-size: 1.2rem;
+        }
+
+        .pris {
+            font-size: 1.2rem;
+
+        }
+
+
         @media only screen and (max-width: 630px) {
             button {
 
@@ -206,9 +216,9 @@
                     const klon = skabelon.cloneNode(true);
                     klon.querySelector(".billede").src = medieurl + ret.billede;
                     klon.querySelector(".navn").textContent = ret.navn;
-                    klon.querySelector(".oprindelsesregion").textContent = ret.oprindelsesregion;
+                    klon.querySelector(".oprindelsesregion").textContent = "Fra:" + " " + ret.oprindelsesregion;
                     klon.querySelector(".kortbeskrivelse").textContent = ret.kortbeskrivelse;
-                    klon.querySelector(".pris").textContent = ret.pris;
+                    klon.querySelector(".pris").textContent = "Pris:" + " " +  ret.pris + ",-" ;
 
                     klon.querySelector(".dishes").addEventListener("click", () => visDetaljer(ret));
                     dest.appendChild(klon);

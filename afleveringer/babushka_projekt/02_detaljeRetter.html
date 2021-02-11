@@ -96,6 +96,20 @@
         p {
             font-family: 'PT Sans', sans-serif;
         }
+
+
+        .oprindelsesregion {
+            font-size: 1.2rem;
+        }
+
+        .pris {
+            font-size: 1.2rem;
+
+        }
+
+
+
+
     </style>
 </head>
 
@@ -142,9 +156,9 @@
         function visRet() {
             document.querySelector(".billede").src = medieurl + ret.billede;
             document.querySelector(".navn").textContent = ret.navn;
-            document.querySelector(".oprindelsesregion").textContent = ret.oprindelsesregion;
+            document.querySelector(".oprindelsesregion").textContent = "Fra:" + " " + ret.oprindelsesregion;
             document.querySelector(".langbeskrivelse").textContent = ret.langbeskrivelse;
-            document.querySelector(".pris").textContent = ret.pris;
+            document.querySelector(".pris").textContent = "Pris:" + " " + ret.pris + ",-";
             document.querySelector("button").addEventListener("click", tilbageTilRetter);
         }
 
